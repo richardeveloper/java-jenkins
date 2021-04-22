@@ -35,7 +35,7 @@ class GeradorDePagamentoTest {
 	private Clock clock;
 	
 	@BeforeEach
-	public void beforeEach() {
+	public void setUp() {
 		MockitoAnnotations.initMocks(this);
 		this.gerador = new GeradorDePagamento(pagamentoDao, clock);
 	}
